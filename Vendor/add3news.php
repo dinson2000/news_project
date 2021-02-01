@@ -29,12 +29,14 @@
       <div class="form-group">
         <label for="sel1">Select Category:</label>
         <select class="form-control" name="sel1" id="sel1">
-          <option value="Entertainment">Entertainment</option>
+        <option value="Entertainment">Entertainment</option>
           <option value="Start-ups">Start-ups</option>
-          <option value="Health And Technology">Health And Technology</option>
+          <option value="Health">Health</option>
+          <option value="Technology">Technology</option>
           <option value="Fashion And Lifestyle">Fashion And Lifestyle</option>
           <option value="Politics">Politics</option>
-          <option value="Education And Sports">Education And Sports</option>
+          <option value="Education">Education</option>
+          <option value="Sports">Sports</option>
           <option value="Advice">Advice</option>
           <option value="Success Stories">Success Stories</option>
           <option value="Others">Others</option>
@@ -57,6 +59,11 @@
         <label for="exampleFormControlTextarea1">Headline:</label>
         <input type="text" textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="headline"></textarea>
       </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Description:</label>
+        <textarea type="text" textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description"></textarea>
+      </div>
+
 
       <button type="submit" class="btn btn-primary" name="submit" value="submit">Submit</button>
       <button type="reset" class="btn btn-dark ml-3" name="submit1">Reset</button>
@@ -64,40 +71,49 @@
   </div>
   <?php
 
-  session_start();
+session_start();
+  
   $msg = "";
   if (isset($_POST['submit'])) {
-    $target = "../cart/upload/" . basename($_FILES['image']['name']);
     require "connection.php";
-
+    
     $category=$_POST['sel1'];
+    $image_temp=$_FILES['image']['tmp_name'];
     $image = $_FILES['image']['name'];
-    $uploadon=$_POST['date'];
-    $uploadon=date_format(date_create($uploadon),"Y-m-d");
-    $author=$_POST['author'];
-    $headline = $_POST['headline'];
+    $target = "images/".basename($image);
+  $uploadon=$_POST['date'];
+  $uploadon=date_format(date_create($uploadon),"Y-m-d");
+  $author=mysqli_escape_string($conn,$_POST['author']);
+    $headline=mysqli_escape_string($conn,$_POST['headline']);
+    $description=mysqli_escape_string($conn,$_POST['description']);
+   
 
-    // $tablename = "vendor_".$_SESSION['id'];
-    // echo $tablename;
 
-    $sql = "INSERT INTO top3 (headline,image,uploadon,category,author)VALUES('$headline','$image','$uploadon','$category','$author')";
-    $query_run = mysqli_query($conn, $sql);
+  // $tablename = "vendor_".$_SESSION['id'];
+  // echo $tablename;
+  $sql = "INSERT INTO top3 (headline,description,image,uploadon,category,author)VALUES('$headline','$description','$image','$uploadon','$category','$author')";
 
+  $query_run = mysqli_query($conn, $sql);
+
+  if (move_uploaded_file($image_temp, $target)) {
+    $msg = "Image uploaded successfully";
+    // echo "done";
     if ($query_run) {
-      echo "<script>alert('Your News is added successfully!!');</script>";
+      echo "<script>alert('Your News added successfully!!');</script>";
     } else {
       echo "<script>alert('Try Again');</script>";
     }
-
-    //   if(move_uploaded_file($_FILES['image']['tmp_name'], $target)){
-    //     $msg="Uploaded Succefully";
-    //   }
-    //   else{
-    //     $msg="There was a problem";
-    //   }
+    
   }
-  ?>
-
+  else{
+    $msg = "Failed to upload image";
+    echo "<script>alert('$msg');</script>";
+    // print_r($_FILES['image']);
+    
+  }
+  
+}
+ ?>
 </body>
 
 </html>

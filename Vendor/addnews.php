@@ -25,16 +25,18 @@
 
   <div class="container-fluid">
     <h4 class="display-4 mb-4">Add News</h4>
-    <form action="" method="POST" enctype="multipart/form-data">
+    <form action="addnews.php" method="POST" enctype="multipart/form-data">
       <div class="form-group">
         <label for="sel1">Select Category:</label>
         <select class="form-control" name="sel1" id="sel1">
           <option value="Entertainment">Entertainment</option>
           <option value="Start-ups">Start-ups</option>
-          <option value="Health And Technology">Health And Technology</option>
+          <option value="Health">Health</option>
+          <option value="Technology">Technology</option>
           <option value="Fashion And Lifestyle">Fashion And Lifestyle</option>
           <option value="Politics">Politics</option>
-          <option value="Education And Sports">Education And Sports</option>
+          <option value="Education">Education</option>
+          <option value="Sports">Sports</option>
           <option value="Advice">Advice</option>
           <option value="Success Stories">Success Stories</option>
           <option value="Others">Others</option>
@@ -69,18 +71,22 @@
   <?php
 
   session_start();
-  $msg = "";
-  if (isset($_POST['submit'])) {
-    $target = "../cart/upload/" . basename($_FILES['image']['name']);
-    require "../vendor/connection.php";
-
-    $category=$_POST['sel1'];
-    $image = $_FILES['image']['name'];
+    
+    $msg = "";
+    if (isset($_POST['submit'])) {
+      require "connection.php";
+      
+      $category=$_POST['sel1'];
+      $image_temp=$_FILES['image']['tmp_name'];
+      $image = $_FILES['image']['name'];
+      $target = "images/".basename($image);
     $uploadon=$_POST['date'];
     $uploadon=date_format(date_create($uploadon),"Y-m-d");
-    $author=$_POST['author'];
-    $headline = $_POST['headline'];
-    $description = $_POST['description'];
+    $author=mysqli_escape_string($conn,$_POST['author']);
+    $headline=mysqli_escape_string($conn,$_POST['headline']);
+    $description=mysqli_escape_string($conn,$_POST['description']);
+    // $headline = $_POST['headline'];
+    // $description = $_POST['description'];
 
     // $tablename = "vendor_".$_SESSION['id'];
     // echo $tablename;
@@ -88,20 +94,25 @@
     $sql = "INSERT INTO headlines (image,headline,description,category,uploadon,author)VALUES('$image','$headline','$description','$category','$uploadon','$author')";
     $query_run = mysqli_query($conn, $sql);
 
-    if ($query_run) {
-      echo "<script>alert('Your product added successfully!!');</script>";
-    } else {
-      echo "<script>alert('Try Again');</script>";
+    if (move_uploaded_file($image_temp, $target)) {
+      $msg = "Image uploaded successfully";
+      // echo "done";
+      if ($query_run) {
+        echo "<script>alert('Your News added successfully!!');</script>";
+      } else {
+        echo "<script>alert('Try Again');</script>";
+      }
+      
     }
-
-    //   if(move_uploaded_file($_FILES['image']['tmp_name'], $target)){
-    //     $msg="Uploaded Succefully";
-    //   }
-    //   else{
-    //     $msg="There was a problem";
-    //   }
+    else{
+      $msg = "Failed to upload image";
+      echo "<script>alert('$msg');</script>";
+      // print_r($_FILES['image']);
+      
+    }
+    
   }
-  ?>
+   ?>
 
 </body>
 
