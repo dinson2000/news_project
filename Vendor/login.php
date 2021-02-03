@@ -51,8 +51,7 @@ if(isset($_POST['login']))
   $password=$_POST['password'];
   $password = md5($password);
   
-  $result=mysqli_query($conn,"select * from users where password='$password'") 
-          or die("Failed to query database".mysqli_error());
+  $result=mysqli_query($conn,"select * from users where password='$password'");
   $row=mysqli_fetch_array($result);
 		
 		$username = $row['name'];

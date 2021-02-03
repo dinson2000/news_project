@@ -13,7 +13,9 @@
 		
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+		
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 		
@@ -21,28 +23,28 @@
 			<nav id="sidebar" class="active">
 
 <h4 style="font-size: 15px;" class="font-weight-bold"><a href="#a" style="color: white;"><img src="vendor.jpg" class="rounded-circle m-3" style="height:45px;width:45px;">Welcome <?php
-      session_start();
       // $sql="SELECT name FROM users";
       // $query_run=mysqli_query($conn,$sql);
       
-			echo $_SESSION['user_name']; 
+      // echo $_SESSION['user_name']; 
+      echo "User";
 			?></a></h4>
 
 				<!-- <h1><a href="index.html" class="">VN</a></h1> -->
         <ul class="list-unstyled components mt-4 mb-5">
 
           <li class="active">
-            <a href="addnews.php" target="frame"><span class="fa fa-shopping-cart"></span> Add News</a>
+            <a href="news.php" target="frame"><span class="fas fa-eye"></span>News Master</a>
           </li>
           <!-- <li>
-              <a href="addarticle.php" target="frame"><span class="fa fa-user"></span>Add Article</a>
+              <a href="add3news.php" target="frame"><span class="fa fa-user"></span>Add top 3 News</a>
           </li> -->
           <li>
-              <a href="add3news.php" target="frame"><span class="fa fa-user"></span>Add top 3 News</a>
+            <a href="contact_details.php" target="frame"><span class="material-icons">&#xe0c9;</span> Contact Master</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="../vendor/frame/announcments.html" target="frame"><span class="material-icons">&#xe0c9;</span> Announcements</a>
-          </li>
+          </li> -->
         </ul>
 
        
@@ -65,10 +67,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="nav navbar-nav ml-2">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="admin.php">Home&nbsp;<span class="fas fa-home"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Orders</a>
+                <a class="nav-link" href="addnews.php" target="frame">Add News&nbsp;<span class="fas fa-newspaper"></span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Account</a>
