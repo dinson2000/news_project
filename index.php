@@ -1,6 +1,4 @@
-<?php
-require "connection.php"
-?>
+
 <html class="no-js" lang="zxx">
 <head>
 <meta charset="utf-8">
@@ -24,6 +22,9 @@ require "connection.php"
 <link rel="stylesheet" href="assets/css/slick.css">
 <link rel="stylesheet" href="assets/css/nice-select.css">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="./sidebar1.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="./style3.css">
 <script>
 function startTime() {
   var today = new Date();
@@ -107,108 +108,7 @@ function checkTime(i) {
 </div>
 </div>
 <!-- Preloader Start -->
-<header>
-<!-- Header Start -->
-<div class="header-area">
-<div class="main-header ">
-
-<!-- <div class="header-mid gray-bg"> -->
-<div class="container">
-<div class="row d-flex align-items-center">
-<div class="col-xl-3 col-lg-3 col-md-3 d-none d-md-block">
-<div class="logo">
-<a href="index.php"><img style="height:150px;width:140px;" src="assets/img/logo/newlogo.png" alt="" data-pagespeed-url-hash="4238934543" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
-</div>
-</div>
-
-</div>
-</div>
-<!-- </div> -->
-<div style="background-color: #4287f5;" class="header-bottom header-sticky">
-<div class="container">
-<div class="row align-items-center">
-<div  class="col-xl-12 col-lg-12 col-md-12 header-flex">
-<!-- sticky -->
-<div class="sticky-logo">
-<!-- <a href="index.php"><img style="height:50px;width:150px;" src="assets/img/logo/newlogo.png" alt="" data-pagespeed-url-hash="4238934543" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a> -->
-<a href="index.php" style="font-size:30px;"><img src="newheader.png" style="height: 55px;width:180px;" alt=""></a>
-</div>
-<!-- Main-menu -->
-<div class="main-menu d-none d-md-block">
-<nav>
-    
-    <!-- <div class="nav nav-tabs" id="nav-tab" role="tablist">   -->
-<ul class="nav nav-tabs" id="navigation"  role="tablist">
-    
-    <!-- <li>-->
-      
-    <!-- <a class="" href="index.php">Home</a>
-
-    <a class="" href="about.php">About Us</a>
-    <a class="" href="contact.php">Contact Us</a>
-    <a class="" id="nav-Entertainment-tab" data-toggle="tab" href="#nav-Entertainment" role="tab" aria-controls="nav-Entertainment" aria-selected="true">Entertainment</a>
-    <a class="" id="nav-Start-ups-tab" data-toggle="tab" href="#nav-Start-ups" role="tab" aria-controls="nav-Start-ups" aria-selected="false">Start-ups</a>
-    <a class="" id="nav-Politics-tab" data-toggle="tab" href="#nav-Politics" role="tab" aria-controls="nav-Politics" aria-selected="false">Politics</a>
-    <a class="" id="nav-Advice-tab" data-toggle="tab" href="#nav-Advice" role="tab" aria-controls="nav-Advice" aria-selected="false">Advice</a>
-    -->
-    <!-- <li><a class="" href="index.php">Home</a></li>
-    <li><a class="" href="about.php">About Us</a></li>
-    <li><a class="" href="contact.php">Contact Us</a></li> -->
-    <li ><a class="" id="nav-Entertainment-tab" data-toggle="tab" href="#nav-Entertainment" role="tab" aria-controls="nav-Entertainment" aria-selected="true">Entertainment</a></li>
-  <li>  <a class="" id="nav-Education-tab"  data-toggle="tab" href="#nav-Education" role="tab" aria-controls="nav-Education" aria-selected="false">Education</a></li>
-  <li>  <a class="" id="nav-Sports-tab"  data-toggle="tab" href="#nav-Sports" role="tab" aria-controls="nav-Sports" aria-selected="false">Sports</a></li>
-  <li>  <a class="" id="nav-Health-tab" data-toggle="tab" href="#nav-Health" role="tab" aria-controls="nav-Health" aria-selected="false">Health</a></li>
-  <li><a class="" id="nav-Politics-tab" data-toggle="tab" href="#nav-Politics" role="tab" aria-controls="nav-Politics" aria-selected="false">Politics</a></li>
-   
-  <!-- <li><a class="ml-1 mr-1" id="nav-Advice-tab" data-toggle="tab" href="#nav-Advice" role="tab" aria-controls="nav-Advice" aria-selected="false">Advice</a></li>
-    -->
-
-    <li><a href="#">More</a>
-        <ul class="submenu nav nav-tabs" id="nav-tab" role="tablist" >
-        <!-- <div class="nav nav-tabs" id="nav-tab" role="tablist"> -->
-    <li>  <a class="" id="nav-Success_Stories-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Success_Stories" role="tab" aria-controls="nav-Success_Stories" aria-selected="false">Success Stories</a></li>
-    <li><a class="" id="nav-Start-ups-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Start-ups" role="tab" aria-controls="nav-Start-ups" aria-selected="false">Start-ups</a></li>
-
-  <li>  <a class="" id="nav-Technology-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Technology" role="tab" aria-controls="nav-Technology" aria-selected="false">Technology</a></li>
-  <li>  <a class="" id="nav-Fashion_And_Lifestyle-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Fashion_And_Lifestyle" role="tab" aria-controls="nav-Fashion_And_Lifestyle" aria-selected="false">Fashion and lifestyle</a></li>
-  <li>  <a class="" id="nav-Others-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Others" role="tab" aria-controls="nav-Others" aria-selected="false">Others</a></li>
-
-  <!-- <a class="" id="nav-Success_Stories-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Success_Stories" role="tab" aria-controls="nav-Success_Stories" aria-selected="false">Success Stories</a>
-    <a class="" id="nav-Health_And_Technology-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Health_And_Technology" role="tab" aria-controls="nav-Health_And_Technology" aria-selected="false">Health and Technology</a>
-    <a class="" id="nav-Fashion_And_Lifestyle-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Fashion_And_Lifestyle" role="tab" aria-controls="nav-Fashion_And_Lifestyle" aria-selected="false">Fashion and lifestyle</a>
-   <a class="" id="nav-Education_And_Sports-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Education_And_Sports" role="tab" aria-controls="nav-Education_And_Sports" aria-selected="false">Education and Sports</a>
-   <a class="" id="nav-Others-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Others" role="tab" aria-controls="nav-Others" aria-selected="false">Others</a> -->
-
-<!-- </div> -->
-</ul>
-<li><a class="" href="contact.php">Mail Us</a></li>
-<li class="k1" ><a class="pl-3 k1 pr-3" href="https://www.fb.com/"><i  class="fab fa-facebook-f"></i></a></li>
-<li class="k1"  ><a class="pl-3 k1 pr-3" href="#"><i  class="fab fa-twitter"></i></a></li>
-<li class="k1" ><a class="pl-3 k1 pr-3" href="#"><i  class="fab fa-instagram"></i></a></li>
-<li ><a class="pl-3 pr-3" style="color:blue;" href="#"><?php echo date("d-m-y"); ?></a></li>
-<li><a class="pl-3 " style="color: blue;" href="#"><div id="txt"></div></a></li>
-
-
-    </ul>
- <!-- </div> -->
-<!--</li> -->
-</nav>
-</div>
-</div>
-
-
-
-<!-- Mobile Menu -->
-<div class="col-12">
-<div class="mobile_menu d-block d-md-none"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Header End -->
-</header>
+<?php include "header.php"; ?>
 <main>
 <!-- Trending Area Start -->
 <div class="trending-area fix pt-25 gray-bg">
@@ -335,30 +235,26 @@ $x++;
     <!-- Nav Card -->
     <div class="tab-content" id="nav-tabContent">
       <?php
-      function custom_echo($x, $length,$y1)
-      {
-        if(strlen($x)<=$length)
-        {
-          echo $x;
-        }
-        else
-        {
-          $y=substr($x,0,$length) . '<a style="color:#FF2143;" href="article.php?table=headlines&id='.$y1.'"> [More...]</a>';
-          echo $y;
-        }
-      }
+      
       ?>
     <!-- card one -->
-    <div class="tab-pane fade show active" id="nav-Entertainment" role="tabpanel" aria-labelledby="nav-home-tab">
-    <div class="row">
-    
-    <?php 
-    $sql="SELECT * FROM headlines where category='Entertainment'";
+    <!-- <div class="tab-pane fade show active" id="nav-Entertainment" role="tabpanel" aria-labelledby="nav-home-tab"> -->
+      
+      
+      <?php 
+    if(isset($_GET['category']) && $_GET['category']!=''){
+      
+      $category=$_GET['category'];
+      
+      $sql="SELECT * FROM headlines where category='$category'";
+    }
+    else{
+      $sql="SELECT * FROM headlines where category='Entertainment'";
+    }
     $result=mysqli_query($conn,$sql);
     ?>
-
-   <?php
-      
+    <div id="<?php echo $category; ?>" class="row">
+      <?php
     while ($row=mysqli_fetch_array($result)) {
    ?>
    <a href="article.php?table=headlines&id=<?php echo $row['id'];?>">
@@ -380,373 +276,8 @@ $x++;
     }
     ?>
     </div>
-    </div>
-    <!-- Card two -->
-    <div class="tab-pane fade" id="nav-Start-ups" role="tabpanel" aria-labelledby="nav-Start-ups">
-    <div class="row">
-   
-    <?php 
-    $sql1="SELECT * FROM headlines where category='Start-ups'";
-    $result1=mysqli_query($conn,$sql1);
-    ?>
-
-   <?php
-    while ($row1=mysqli_fetch_array($result1)) {
-   ?>
-   <a href="article.php?table=headlines&id=<?php echo $row1['id'];?>">
-
-    <div class="col-xl-6 col-lg-6 col-md-6">
-    <div class="whats-news-single mb-40 mb-40">
-    <div class="whates-img">
-    <img class="image-height" src="./Vendor/images/<?php echo $row1['image']; ?>" alt="" data-pagespeed-url-hash="45574907" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-    </div>
-    <div class="whates-caption whates-caption2">
-    <h4><a href="article.php?table=headlines&id=<?php echo $row1['id'] ?>"><?php echo $row1['headline'];?> </a></h4>
-    <span>by <?php echo $row1['author']; ?> - <?php $date1=$row1['uploadon']; echo date_format(date_create($date1),"M d,Y"); ?></span>
-    <p><?php custom_echo($row1['description'], 60,$row1['id']) ?></p>
-
-    </div>
-    </div>
-    </div>
-    </a>
-    <?php
-    }
-    ?>
-    </div>
-    </div>
-    <!-- Card three -->
+    <!-- </div> -->
     
-    <!-- card fure -->
-    <div class="tab-pane fade" id="nav-Fashion_And_Lifestyle" role="tabpanel" aria-labelledby="nav-Fashion_And_Lifestyle">
-    <div class="row">
-   
-    <?php 
-    $sql3="SELECT * FROM headlines where category='Fashion And Lifestyle'";
-    $result3=mysqli_query($conn,$sql3);
-    ?>
-
-   <?php
-    while ($row3=mysqli_fetch_array($result3)) {
-   ?>
-   <a href="article.php?table=headlines&id=<?php echo $row3['id'];?>">
-
-    <div class="col-xl-6 col-lg-6 col-md-6">
-    <div class="whats-news-single mb-40 mb-40">
-    <div class="whates-img">
-    <img class="image-height" src="./Vendor/images/<?php echo $row3['image']; ?>" alt="" data-pagespeed-url-hash="45574907" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-    </div>
-    <div class="whates-caption whates-caption2">
-    <h4><a href="article.php?table=headlines&id=<?php echo $row3['id'] ?>"><?php echo $row3['headline'];?> </a></h4>
-    <span>by <?php echo $row3['author']; ?> - <?php $date1=$row3['uploadon']; echo date_format(date_create($date1),"M d,Y"); ?></span>
-    <p><?php custom_echo($row3['description'], 60,$row3['id']) ?></p>
-
-    </div>
-    </div>
-    </div>
-    </a>
-    <?php
-    }
-    ?>
-    </div>
-    </div>
-    <!-- card Five -->
-    <div class="tab-pane fade" id="nav-Politics" role="tabpanel" aria-labelledby="nav-Politics">
-    <div class="row">
-    
-    <?php 
-    $sql4="SELECT * FROM headlines where category='Politics'";
-    $result4=mysqli_query($conn,$sql4);
-    ?>
-
-   <?php
-    while ($row4=mysqli_fetch_array($result4)) {
-   ?>
-   <a href="article.php?table=headlines&id=<?php echo $row4['id'];?>">
-
-    <div class="col-xl-6 col-lg-6 col-md-6">
-    <div class="whats-news-single mb-40 mb-40">
-    <div class="whates-img">
-    <img class="image-height" src="./Vendor/images/<?php echo $row4['image']; ?>" alt="" data-pagespeed-url-hash="45574907" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-    </div>
-    <div class="whates-caption whates-caption2">
-    <h4><a href="article.php?table=headlines&id=<?php echo $row4['id'] ?>"><?php echo $row4['headline'];?> </a></h4>
-    <span>by <?php echo $row4['author']; ?> - <?php $date1=$row4['uploadon']; echo date_format(date_create($date1),"M d,Y"); ?></span>
-    <p><?php custom_echo($row4['description'], 60,$row4['id']) ?></p>
-
-    </div>
-    </div>
-    </div>
-    </a>
-    <?php
-    }
-    ?>
-    </div>
-    </div>
-    <!-- Card Six -->
-    <div class="tab-pane fade" id="nav-Education_And_Sports" role="tabpanel" aria-labelledby="nav-Education_And_Sports">
-    <div class="row">
-    
-    <?php 
-    $sql5="SELECT * FROM headlines where category='Education And Sports'";
-    $result5=mysqli_query($conn,$sql5);
-    ?>
-
-   <?php
-    while ($row5=mysqli_fetch_array($result5)) {
-   ?>
-   <a href="article.php?table=headlines&id=<?php echo $row5['id'];?>">
-
-    <div class="col-xl-6 col-lg-6 col-md-6">
-    <div class="whats-news-single mb-40 mb-40">
-    <div class="whates-img ">
-    <img class="image-height" src="./Vendor/images/<?php echo $row5['image']; ?>" alt="" data-pagespeed-url-hash="45574907" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-    </div>
-    <div class="whates-caption whates-caption2">
-    <h4><a href="article.php?table=headlines&id=<?php echo $row5['id'] ?>"><?php echo $row5['headline'];?> </a></h4>
-    <span>by <?php echo $row5['author']; ?> - <?php $date1=$row5['uploadon']; echo date_format(date_create($date1),"M d,Y"); ?></span>
-    <p><?php custom_echo($row5['description'], 60,$row5['id']) ?></p>
-
-    </div>
-    </div>
-    </div>
-    </a>
-    <?php
-    }
-    ?>
-    </div>
-    </div>
-    <!-- Card seven  -->
-    <div class="tab-pane fade" id="nav-Advice" role="tabpanel" aria-labelledby="nav-Advice">
-    <div class="row">
-    
-    <?php 
-    $sql6="SELECT * FROM headlines where category='Advice'";
-    $result6=mysqli_query($conn,$sql6);
-    ?>
-
-   <?php
-    while ($row6=mysqli_fetch_array($result6)) {
-   ?>
-   <a href="article.php?table=headlines&id=<?php echo $row6['id'];?>">
-
-    <div class="col-xl-6 col-lg-6 col-md-6">
-    <div class="whats-news-single mb-40 mb-40">
-    <div class="whates-img ">
-    <img class="image-height" src="./Vendor/images/<?php echo $row6['image']; ?>" alt="" data-pagespeed-url-hash="45574907" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-    </div>
-    <div class="whates-caption whates-caption2">
-    <h4><a href="article.php?table=headlines&id=<?php echo $row6['id'] ?>"><?php echo $row6['headline'];?> </a></h4>
-    <span>by <?php echo $row6['author']; ?> - <?php $date1=$row6['uploadon']; echo date_format(date_create($date1),"M d,Y"); ?></span>
-    <p><?php custom_echo($row6['description'], 60,$row6['id']) ?></p>
-
-    </div>
-    </div>
-    </div>
-    </a>
-    <?php
-    }
-    ?>
-    </div>
-    </div>
-    <!-- Card eight -->
-    <div class="tab-pane fade" id="nav-Success_Stories" role="tabpanel" aria-labelledby="nav-Success_Stories">
-    <div class="row">
-    
-    <?php 
-    $sql7="SELECT * FROM headlines where category='Success Stories'";
-    $result7=mysqli_query($conn,$sql7);
-    ?>
-
-   <?php
-    while ($row7=mysqli_fetch_array($result7)) {
-   ?>
-   <a href="article.php?table=headlines&id=<?php echo $row7['id'];?>">
-
-    <div class="col-xl-6 col-lg-6 col-md-6">
-    <div class="whats-news-single mb-40 mb-40">
-    <div class="whates-img ">
-    <img class="image-height" src="./Vendor/images/<?php echo $row7['image']; ?>" alt="" data-pagespeed-url-hash="45574907" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-    </div>
-    <div class="whates-caption whates-caption2">
-    <h4><a href="article.php?table=headlines&id=<?php echo $row7['id'] ?>"><?php echo $row7['headline'];?> </a></h4>
-    <span>by <?php echo $row7['author']; ?> - <?php $date1=$row7['uploadon']; echo date_format(date_create($date1),"M d,Y"); ?></span>
-    <p><?php custom_echo($row7['description'], 60,$row7['id']) ?></p>
-
-    </div>
-    </div>
-    </div>
-    </a>
-    <?php
-    }
-    ?>
-    </div>
-    </div>
-    <!-- Card nine -->
-    <div class="tab-pane fade" id="nav-Others" role="tabpanel" aria-labelledby="nav-Others">
-    <div class="row">
-    
-    <?php 
-    $sql8="SELECT * FROM headlines where category='Others'";
-    $result8=mysqli_query($conn,$sql8);
-    ?>
-
-   <?php
-    while ($row8=mysqli_fetch_array($result8)) {
-   ?>
-   <a href="article.php?table=headlines&id=<?php echo $row8['id'];?>">
-
-    <div class="col-xl-6 col-lg-6 col-md-6">
-    <div class="whats-news-single mb-40 mb-40">
-    <div class="whates-img ">
-    <img class="image-height" src="./Vendor/images/<?php echo $row8['image']; ?>" alt="" data-pagespeed-url-hash="45574907" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-    </div>
-    <div class="whates-caption whates-caption2">
-    <h4><a href="article.php?table=headlines&id=<?php echo $row8['id'] ?>"><?php echo $row8['headline'];?> </a></h4>
-    <span>by <?php echo $row8['author']; ?> - <?php $date1=$row8['uploadon']; echo date_format(date_create($date1),"M d,Y"); ?></span>
-    <p><?php custom_echo($row8['description'], 60,$row8['id']) ?></p>
-
-    </div>
-    </div>
-    </div>
-    </a>
-    <?php
-    }
-    ?>
-    </div>
-    </div>
-    <!-- Card ten -->
-    <div class="tab-pane fade" id="nav-Education" role="tabpanel" aria-labelledby="nav-Education">
-    <div class="row">
-    
-    <?php 
-    $sql9="SELECT * FROM headlines where category='Education'";
-    $result9=mysqli_query($conn,$sql9);
-    ?>
-
-   <?php
-    while ($row9=mysqli_fetch_array($result9)) {
-   ?>
-   <a href="article.php?table=headlines&id=<?php echo $row9['id'];?>">
-
-    <div class="col-xl-6 col-lg-6 col-md-6">
-    <div class="whats-news-single mb-40 mb-40">
-    <div class="whates-img ">
-    <img class="image-height" src="./Vendor/images/<?php echo $row9['image']; ?>" alt="" data-pagespeed-url-hash="45574907" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-    </div>
-    <div class="whates-caption whates-caption2">
-    <h4><a href="article.php?table=headlines&id=<?php echo $row9['id'] ?>"><?php echo $row9['headline'];?> </a></h4>
-    <span>by <?php echo $row9['author']; ?> - <?php $date1=$row9['uploadon']; echo date_format(date_create($date1),"M d,Y"); ?></span>
-    <p><?php custom_echo($row9['description'], 60,$row9['id']) ?></p>
-
-    </div>
-    </div>
-    </div>
-    </a>
-    <?php
-    }
-    ?>
-    </div>
-    </div>
-    <!-- Card eleven -->
-    <div class="tab-pane fade" id="nav-Sports" role="tabpanel" aria-labelledby="nav-Sports">
-    <div class="row">
-    
-    <?php 
-    $sql10="SELECT * FROM headlines where category='Sports'";
-    $result10=mysqli_query($conn,$sql10);
-    ?>
-
-   <?php
-    while ($row10=mysqli_fetch_array($result10)) {
-   ?>
-   <a href="article.php?table=headlines&id=<?php echo $row10['id'];?>">
-
-    <div class="col-xl-6 col-lg-6 col-md-6">
-    <div class="whats-news-single mb-40 mb-40">
-    <div class="whates-img ">
-    <img class="image-height" src="./Vendor/images/<?php echo $row10['image']; ?>" alt="" data-pagespeed-url-hash="45574907" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-    </div>
-    <div class="whates-caption whates-caption2">
-    <h4><a href="article.php?table=headlines&id=<?php echo $row10['id'] ?>"><?php echo $row10['headline'];?> </a></h4>
-    <span>by <?php echo $row10['author']; ?> - <?php $date1=$row10['uploadon']; echo date_format(date_create($date1),"M d,Y"); ?></span>
-    <p><?php custom_echo($row10['description'], 60,$row10['id']) ?></p>
-
-    </div>
-    </div>
-    </div>
-    </a>
-    <?php
-    }
-    ?>
-    </div>
-    </div>
-    <!-- Card twelve -->
-    <div class="tab-pane fade" id="nav-Health" role="tabpanel" aria-labelledby="nav-Health">
-    <div class="row">
-    
-    <?php 
-    $sql11="SELECT * FROM headlines where category='Health'";
-    $result11=mysqli_query($conn,$sql11);
-    ?>
-
-   <?php
-    while ($row11=mysqli_fetch_array($result11)) {
-   ?>
-   <a href="article.php?table=headlines&id=<?php echo $row11['id'];?>">
-
-    <div class="col-xl-6 col-lg-6 col-md-6">
-    <div class="whats-news-single mb-40 mb-40">
-    <div class="whates-img ">
-    <img class="image-height" src="./Vendor/images/<?php echo $row11['image']; ?>" alt="" data-pagespeed-url-hash="45574907" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-    </div>
-    <div class="whates-caption whates-caption2">
-    <h4><a href="article.php?table=headlines&id=<?php echo $row11['id'] ?>"><?php echo $row11['headline'];?> </a></h4>
-    <span>by <?php echo $row11['author']; ?> - <?php $date1=$row11['uploadon']; echo date_format(date_create($date1),"M d,Y"); ?></span>
-    <p><?php custom_echo($row11['description'], 60,$row11['id']) ?></p>
-
-    </div>
-    </div>
-    </div>
-    </a>
-    <?php
-    }
-    ?>
-    </div>
-    </div>
-    <!-- Card thirteen -->
-    <div class="tab-pane fade" id="nav-Technology" role="tabpanel" aria-labelledby="nav-Technology">
-    <div class="row">
-    
-    <?php 
-    $sql12="SELECT * FROM headlines where category='Technology'";
-    $result12=mysqli_query($conn,$sql12);
-    ?>
-
-   <?php
-    while ($row12=mysqli_fetch_array($result12)) {
-   ?>
-   <a href="article.php?table=headlines&id=<?php echo $row12['id'];?>">
-
-    <div class="col-xl-6 col-lg-6 col-md-6">
-    <div class="whats-news-single mb-40 mb-40">
-    <div class="whates-img ">
-    <img class="image-height" src="./Vendor/images/<?php echo $row12['image']; ?>" alt="" data-pagespeed-url-hash="45574907" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-    </div>
-    <div class="whates-caption whates-caption2">
-    <h4><a href="article.php?table=headlines&id=<?php echo $row12['id'] ?>"><?php echo $row12['headline'];?> </a></h4>
-    <span>by <?php echo $row12['author']; ?> - <?php $date1=$row12['uploadon']; echo date_format(date_create($date1),"M d,Y"); ?></span>
-    <p><?php custom_echo($row12['description'], 60,$row12['id']) ?></p>
-
-    </div>
-    </div>
-    </div>
-    </a>
-    <?php
-    }
-    ?>
-    </div>
-    </div>
-
     </div>
     <!-- End Nav Card -->
     </div>
@@ -804,9 +335,30 @@ $x++;
 <script src="./assets/js/jquery.validate.min.js"></script>
 <script src="./assets/js/mail-script.js"></script>
 <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
 <!-- Jquery Plugins, main Jquery -->
 <script src="./assets/js/plugins.js"></script>
 <script src="./assets/js/main.js"></script>
+<script type="text/javascript">
+      $(document).ready(function() {
+        $("#sidebar").mCustomScrollbar({
+          theme: "minimal"
+        });
+
+        $('#dismiss, .overlay').on('click', function() {
+          $('#sidebar').removeClass('active');
+          $('.overlay').removeClass('active');
+        });
+
+        $('#sidebarCollapse').on('click', function() {
+          $('#sidebar').addClass('active');
+          $('.overlay').addClass('active');
+          $('.collapse.in').toggleClass('in');
+          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+      });
+    </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','UA-23581568-13');</script>

@@ -1,6 +1,4 @@
-<?php
-require "connection.php"
-?>
+
 <html class="no-js" lang="zxx">
 <head>
 <meta charset="utf-8">
@@ -12,7 +10,7 @@ require "connection.php"
 <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 <!-- CSS here -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
 <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 <link rel="stylesheet" href="assets/css/ticker-style.css">
@@ -25,6 +23,9 @@ require "connection.php"
 <link rel="stylesheet" href="assets/css/slick.css">
 <link rel="stylesheet" href="assets/css/nice-select.css">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="./sidebar1.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="./style3.css">
 <script>
 function startTime() {
   var today = new Date();
@@ -83,110 +84,9 @@ function checkTime(i) {
 </div>
 </div>
 <!-- Preloader Start -->
-<header>
-<!-- Header Start -->
-<div class="header-area mb-4">
-<div class="main-header ">
-
-<!-- <div class="header-mid gray-bg"> -->
-<div class="container">
-<div class="row d-flex align-items-center">
-<div class="col-xl-3 col-lg-3 col-md-3 d-none d-md-block">
-<div class="logo">
-<a href="index.php"><img style="height:150px;width:140px;" src="assets/img/logo/newlogo.png" alt="" data-pagespeed-url-hash="4238934543" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
-</div>
-</div>
-
-</div>
-</div>
-<!-- </div> -->
-<div style="background-color: #4287f5;" class="header-bottom header-sticky">
-<div class="container">
-<div class="row align-items-center">
-<div  class="col-xl-12 col-lg-12 col-md-12 header-flex">
-<!-- sticky -->
-<div class="sticky-logo">
-<!-- <a href="index.php"><img style="height:50px;width:150px;" src="assets/img/logo/newlogo.png" alt="" data-pagespeed-url-hash="4238934543" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a> -->
-<a href="index.php" style="font-size:30px;"><img src="newheader.png" style="height: 55px;width:180px;" alt=""></a>
-</div>
-<!-- Main-menu -->
-<div class="main-menu d-none d-md-block">
-<nav>
-    
-    <!-- <div class="nav nav-tabs" id="nav-tab" role="tablist">   -->
-<ul class="nav nav-tabs" id="navigation"  role="tablist">
-    
-    <!-- <li>-->
-      
-    <!-- <a class="" href="index.php">Home</a>
-
-    <a class="" href="about.php">About Us</a>
-    <a class="" href="contact.php">Contact Us</a>
-    <a class="" id="nav-Entertainment-tab" data-toggle="tab" href="#nav-Entertainment" role="tab" aria-controls="nav-Entertainment" aria-selected="true">Entertainment</a>
-    <a class="" id="nav-Start-ups-tab" data-toggle="tab" href="#nav-Start-ups" role="tab" aria-controls="nav-Start-ups" aria-selected="false">Start-ups</a>
-    <a class="" id="nav-Politics-tab" data-toggle="tab" href="#nav-Politics" role="tab" aria-controls="nav-Politics" aria-selected="false">Politics</a>
-    <a class="" id="nav-Advice-tab" data-toggle="tab" href="#nav-Advice" role="tab" aria-controls="nav-Advice" aria-selected="false">Advice</a>
-    -->
-    <!-- <li><a class="" href="index.php">Home</a></li>
-    <li><a class="" href="about.php">About Us</a></li>
-    <li><a class="" href="contact.php">Contact Us</a></li> -->
-    <li><a class="" id="nav-Entertainment-tab" data-toggle="tab" href="#nav-Entertainment" role="tab" aria-controls="nav-Entertainment" aria-selected="true">Entertainment</a></li>
-  <li>  <a class="" id="nav-Education-tab"  data-toggle="tab" href="#nav-Education" role="tab" aria-controls="nav-Education" aria-selected="false">Education</a></li>
-  <li>  <a class="" id="nav-Sports-tab"  data-toggle="tab" href="#nav-Sports" role="tab" aria-controls="nav-Sports" aria-selected="false">Sports</a></li>
-  <li>  <a class="" id="nav-Health-tab" data-toggle="tab" href="#nav-Health" role="tab" aria-controls="nav-Health" aria-selected="false">Health</a></li>
-  <li><a class="" id="nav-Politics-tab" data-toggle="tab" href="#nav-Politics" role="tab" aria-controls="nav-Politics" aria-selected="false">Politics</a></li>
-   
-  <!-- <li><a class="ml-1 mr-1" id="nav-Advice-tab" data-toggle="tab" href="#nav-Advice" role="tab" aria-controls="nav-Advice" aria-selected="false">Advice</a></li>
-    -->
-
-    <li><a href="#">More</a>
-        <ul class="submenu nav nav-tabs" id="nav-tab" role="tablist" >
-        <!-- <div class="nav nav-tabs" id="nav-tab" role="tablist"> -->
-    <li>  <a class="" id="nav-Success_Stories-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Success_Stories" role="tab" aria-controls="nav-Success_Stories" aria-selected="false">Success Stories</a></li>
-    <li><a class="" id="nav-Start-ups-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Start-ups" role="tab" aria-controls="nav-Start-ups" aria-selected="false">Start-ups</a></li>
-
-  <li>  <a class="" id="nav-Technology-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Technology" role="tab" aria-controls="nav-Technology" aria-selected="false">Technology</a></li>
-  <li>  <a class="" id="nav-Fashion_And_Lifestyle-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Fashion_And_Lifestyle" role="tab" aria-controls="nav-Fashion_And_Lifestyle" aria-selected="false">Fashion and lifestyle</a></li>
-  <li>  <a class="" id="nav-Others-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Others" role="tab" aria-controls="nav-Others" aria-selected="false">Others</a></li>
-
-  <!-- <a class="" id="nav-Success_Stories-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Success_Stories" role="tab" aria-controls="nav-Success_Stories" aria-selected="false">Success Stories</a>
-    <a class="" id="nav-Health_And_Technology-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Health_And_Technology" role="tab" aria-controls="nav-Health_And_Technology" aria-selected="false">Health and Technology</a>
-    <a class="" id="nav-Fashion_And_Lifestyle-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Fashion_And_Lifestyle" role="tab" aria-controls="nav-Fashion_And_Lifestyle" aria-selected="false">Fashion and lifestyle</a>
-   <a class="" id="nav-Education_And_Sports-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Education_And_Sports" role="tab" aria-controls="nav-Education_And_Sports" aria-selected="false">Education and Sports</a>
-   <a class="" id="nav-Others-tab" style="color:#4287f5;" data-toggle="tab" href="#nav-Others" role="tab" aria-controls="nav-Others" aria-selected="false">Others</a> -->
-
-<!-- </div> -->
-</ul>
-<li><a class="" href="contact.php">Mail Us</a></li>
-<li class="k1" ><a class="pl-3 k1 pr-3" href="https://www.fb.com/"><i  class="fab fa-facebook-f"></i></a></li>
-<li class="k1"  ><a class="pl-3 k1 pr-3" href="#"><i  class="fab fa-twitter"></i></a></li>
-<li class="k1" ><a class="pl-3 k1 pr-3" href="#"><i  class="fab fa-instagram"></i></a></li>
-<li ><a class="pl-3 pr-3" style="color:blue;" href="#"><?php echo date("d-m-y"); ?></a></li>
-<li><a class="pl-3 " style="color: blue;" href="#"><div id="txt"></div></a></li>
-
-
-    </ul>
- <!-- </div> -->
-<!--</li> -->
-</nav>
-</div>
-</div>
-
-
-
-<!-- Mobile Menu -->
-<div class="col-12">
-<div class="mobile_menu d-block d-md-none"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Header End -->
-</header>
+<?php include "header.php"; ?>
 <main>
-<div class="container">
+<div class="container px-4">
   
 <!-- <div class="tab-pane fade" id="nav-Technology" role="tabpanel" aria-labelledby="nav-Technology"> -->
     <?php 
@@ -195,29 +95,48 @@ function checkTime(i) {
     $sql12="SELECT * FROM $table where id='$id'";
     $result12=mysqli_query($conn,$sql12);
   
-    while ($row12=mysqli_fetch_array($result12)) {
+    $row12=mysqli_fetch_array($result12);
    ?>
     <div class="row">
     <div class="col-md-9 col-12">
       <h2><?php echo $row12['headline'];?></h2>
+      <!-- <div class="row"> -->
+      <!-- <div class="col-2"> -->
+        <div class="d-flex justify-content-start">
+          <div>
+            <img class="mb-4 mt-2 rounded-circle" style="width: 50px;height:50px;" src="./Vendor/images/<?php echo $row12['image']; ?>" alt="">
+
+          </div>
+          <div class="mx-3 mt-1">
+            <p style="font-size: 18px;color:gray;font-style:italic;" class="m-0 font-weight-bold"><?php echo $row12['author']; ?></p>
+           <p style="font-size: 15px;color:gray;" class="m-0"> <?php $date1=$row12['uploadon']; echo date_format(date_create($date1),"M d,Y"); ?></p>  
+
+          </div>
+        </div>
+      
+      <!-- </div> -->
+      <!-- <div class="col-10"> -->
+
+      <!-- </div> -->
+      <!-- </div> -->
+
+
       <div class="row">
         <div class="col-12">
           
-          <img class="m-4 img-circle" style="width: 50px;height:50px;" src="./Vendor/images/<?php echo $row12['image']; ?>" alt="">
-
+    
         </div>
-      <img class="main_image" src="./Vendor/images/<?php echo $row12['image']; ?>" alt="">
+      <img class="main_image " src="./Vendor/images/<?php echo $row12['image']; ?>" alt="">
+    <p style="font-size: 16px;white-space:pre-line;" class="my-3"><?php echo $row12['description']; ?></p>
 
-      </div>
-    <span style="font-size: 18px;color:gray;" class="">by <?php echo $row12['author']; ?> - <?php $date1=$row12['uploadon']; echo date_format(date_create($date1),"M d,Y"); ?></span>  
-    <p style="font-size: 16px;" class="mt-2"><?php echo $row12['description']; ?></p>
   </div>
+      </div>
     
   
 
 </div>
     <?php
-    }
+    
     ?>
    
     <!-- </div> -->
@@ -274,6 +193,32 @@ function checkTime(i) {
 <script src="./assets/js/plugins.js"></script>
 <script src="./assets/js/main.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<!-- Jquery Plugins, main Jquery -->
+<script src="./assets/js/plugins.js"></script>
+<script src="./assets/js/main.js"></script>
+<script type="text/javascript">
+      $(document).ready(function() {
+        $("#sidebar").mCustomScrollbar({
+          theme: "minimal"
+        });
+
+        $('#dismiss, .overlay').on('click', function() {
+          $('#sidebar').removeClass('active');
+          $('.overlay').removeClass('active');
+        });
+
+        $('#sidebarCollapse').on('click', function() {
+          $('#sidebar').addClass('active');
+          $('.overlay').addClass('active');
+          $('.collapse.in').toggleClass('in');
+          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+      });
+    </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','UA-23581568-13');</script>
 </body>

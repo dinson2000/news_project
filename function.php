@@ -17,7 +17,7 @@ function get_post($connection,$value){
   }
 }
 
-function custom_echo($x, $length)
+function custom_echo($x, $length,$y1)
       {
         if(strlen($x)<=$length)
         {
@@ -25,8 +25,8 @@ function custom_echo($x, $length)
         }
         else
         {
-          $y=substr($x,0,$length).'...';
+          $y=substr($x,0,$length) . '<a style="color:#FF2143;" href="article.php?table=headlines&id='.$y1.'"> [More...]</a>';
           echo $y;
         }
       }
-?>
+    ?>

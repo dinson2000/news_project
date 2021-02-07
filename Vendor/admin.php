@@ -88,8 +88,8 @@
           </div>
         </nav>
          <div>
-           <h2 class="mb-2">Home Page Content</h2>
-           <p>Click on side navbar to enable frame accordingly.</p>
+           <!-- <h2 class="mb-2">Home Page Content</h2>
+           <p>Click on side navbar to enable frame accordingly.</p> -->
              <div style="height: 100%;" class="embed-responsive embed-responsive-16by9">
                <iframe class="embed-responsive-item" name="frame" allowfullscreen></iframe>
               </div>

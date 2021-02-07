@@ -26,10 +26,10 @@ while($x <= 3) {
 
 <div class="whats-right-single mb-20">
 <div class="whats-right-img">
-<img style="height: 60px;width:60px;" src="./Vendor/images/<?php echo $row3['image']; ?>" alt="" data-pagespeed-url-hash="1446202644" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+<img style="height: 60px;width:90px;" src="./Vendor/images/<?php echo $row3['image']; ?>" alt="" data-pagespeed-url-hash="1446202644" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 </div>
 <div class="whats-right-cap">
-<h4><a href="article.php?table=headlines&id=<?php echo $row3['id']; ?>"><?php echo $row3['headline'];?></a></h4>
+<h4><a href="article.php?table=headlines&id=<?php echo $row3['id']; ?>"><?php custom_echo($row3['headline'],50,$row3['id']);?></a></h4>
 <p>by <?php echo $row3['author']; ?> - <?php $date1=$row3['uploadon']; echo date_format(date_create($date1),"M d,Y"); ?></p>
 </div>
 </div>
@@ -50,7 +50,7 @@ $x++;
             <div> 
 
               <a href="index.php"><p class="mt-4 text-white" style="font-size: 17px;">Home</p></a>
-              <a href="article.php"><p class="text-white" style="font-size: 17px;">Articles</p></a>
+              <!-- <a href="article.php"><p class="text-white" style="font-size: 17px;">Articles</p></a> -->
               <a href="about.php"><p class="text-white" style="font-size: 17px;">About Us</p></a>
               <a href="contact.php"><p class="text-white" style="font-size: 17px;">Contact Us</p></a>
             </div>
